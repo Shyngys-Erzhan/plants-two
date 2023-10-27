@@ -2,6 +2,7 @@ body {
   font-family: "Inika", serif;
   width: 1440px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -10,13 +11,13 @@ header {
   background-color: #edf2ec;
   align-items: center;
   width: 1220px;
-  height: 134px;
   padding: 42px 109px;
   margin: 0 auto;
 }
 
 .header-logo {
   display: flex;
+  align-items: center;
 }
 
 .plants_logo {
@@ -24,13 +25,9 @@ header {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  margin-right: 46px;
-  transition: color 0.3s linear;
+  padding-left: 10px;
 }
 
-.plants_logo:hover {
-  color: cyan;
-}
 /*text*/
 .nav-item {
   color: #010201;
@@ -38,11 +35,6 @@ header {
   font-weight: 400;
   font-size: 16px;
   margin-right: 46px;
-  transition: color 0.3s linear;
-}
-
-.nav-item:hover {
-  color: aqua;
 }
 
 .nav-items {
@@ -51,11 +43,6 @@ header {
   font-weight: 400;
   font-size: 16px;
   margin-right: 46px;
-  transition: color 0.3s linear;
-}
-
-.nav-items:hover {
-  color: aqua;
 }
 
 /*welcome*/
@@ -63,9 +50,8 @@ header {
 .welcome {
   display: flex;
   width: 1220px;
-  padding: 62px 109px 62.642px 109px;
+  padding: 22px 109px 22.642px 109px;
   justify-content: center;
-  align-items: center;
   flex-shrink: 0;
   background-color: #edf2ec;
   background-size: cover;
@@ -74,7 +60,6 @@ header {
 
 .welcome_section {
   width: 1220px;
-  flex-shrink: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -97,18 +82,13 @@ header {
   color: #499a18;
 }
 
-.text_plants:hover {
-  color: rgb(0, 255, 128);
-  transition: color 0.3s linear;
-}
-
-.h1 {
+.welcome_h1 {
   width: 549px;
   height: 101px;
   flex-shrink: 0;
 }
 
-.h1 {
+.welcome_h1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -117,31 +97,21 @@ header {
   font-weight: 700;
   line-height: 50px;
   color: #717171;
-  transition: color 0.3s linear;
 }
 
-.h1:hover {
-  color: rgb(0, 255, 128);
-}
-
-.p {
+.welcome_p {
   width: 525.442px;
   height: 105px;
   flex-shrink: 0;
 }
 
-.p {
+.welcome_p {
   color: #636060;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
-}
-
-.p:hover {
-  color: rgb(0, 255, 128);
-  transition: color 0.3s linear;
 }
 
 .buttons {
@@ -170,12 +140,495 @@ header {
   flex-shrink: 0;
   border-radius: 10px;
   border: 2px solid #e06733;
-  background: rgba(224, 103, 51, 0);
 }
 .buttons:hover {
-  color: aqua;
+  color: #fff;
+  background-color: #e06733;
 }
 
 .button {
   margin-top: 50px;
+}
+
+.about {
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.about_section {
+  width: 1220px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_text {
+  margin-top: 35px;
+}
+
+.about_h2 {
+  width: 463px;
+  height: 102px;
+  flex-shrink: 0;
+  color: #499a18;
+  font-family: Inika;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about_highlight_text {
+  color: #e06733;
+  font-family: Inika;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about_p {
+  width: 605px;
+  height: 208px;
+  flex-shrink: 0;
+  color: #636060;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.service {
+  width: 1440px;
+  padding: 40px, 109px;
+  background-color: #edf2ec;
+}
+
+.service_container {
+  width: 1222px;
+}
+
+.services_content {
+  width: 1007px;
+  height: 94px;
+  margin-left: 145px;
+  background-color: #edf2ec;
+}
+
+.service_text {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edf2ec;
+}
+
+.service_p {
+  width: 306px;
+  top: 40px;
+  margin: 0 auto;
+  margin-left: 0;
+  font-family: Inika;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Inika;
+  color: #499a18;
+}
+
+.service_button {
+  margin-right: 120px;
+}
+
+.service_buttons {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+  margin-right: 66px;
+  color: #e06733;
+  font-family: Inter;
+  flex-shrink: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid #e06733;
+}
+
+.service_buttons:hover {
+  color: #fff;
+  background-color: #e06733;
+}
+
+.services {
+  width: 1220px;
+  margin-left: 145px;
+  margin-top: 50px;
+  background-color: #edf2ec;
+}
+
+.service_item_container1 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1220px;
+}
+
+.service_item1 {
+  width: 330px;
+  height: 450px;
+  top: 224px;
+  left: 109px;
+}
+
+.service_item1_main_p {
+  margin-top: 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e06733;
+}
+
+.service_item1_p {
+  margin-left: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #717171;
+}
+
+.service_item2_main_p {
+  margin-top: 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e06733;
+}
+
+.service_item3_main_p {
+  margin-top: 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e06733;
+}
+
+.prices {
+  width: 1440px;
+  background-color: #ffffff;
+}
+
+.price_container {
+  width: 1220px;
+  padding-top: 10px;
+  padding-left: 145px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_window {
+  width: 332px;
+}
+
+.price_window_p {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.prices_item {
+  width: 332px;
+  height: 210px;
+  border: 1px solid #e3e1d5;
+  border-radius: 40px;
+}
+
+.price_buttons {
+  width: 250px;
+}
+
+.price_button_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background: #edf2ec;
+  list-style-type: none;
+  text-align: left;
+}
+
+.price_button_2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background: #edf2ec;
+  list-style-type: none;
+  text-align: left;
+}
+
+.price_button_3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background: #edf2ec;
+  list-style-type: none;
+  text-align: left;
+}
+
+.price_button_1::before {
+  content: "Basics";
+}
+
+.price_button_2::before {
+  content: "Standard";
+}
+.price_button_3::before {
+  content: "Pro care";
+}
+
+.prices_container_2 {
+  padding-bottom: 40px;
+  padding-right: 120px;
+}
+
+.text_call_us {
+  width: 452px;
+}
+
+.prices_p {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.prices_p_spam {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  color: #499a18;
+}
+
+.btn_call_us {
+  width: 162px;
+  height: 50px;
+  font-family: Inika;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e06733;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #e06733;
+  padding: 8px 8px 8px 8px;
+}
+
+.btn_call_us:hover {
+  color: #fff;
+  background-color: #e06733;
+}
+
+.prices_text_button {
+  text-align: right;
+}
+
+.prices_png {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.contacts {
+  width: 1440px;
+  background-color: #edf2ec;
+}
+.contacts_main_container {
+  display: flex;
+  justify-content: space-between;
+  width: 1220px;
+  margin-left: 109px;
+  padding-top: 30px;
+}
+
+.contact_p {
+  margin-top: 10px;
+  color: #499a18;
+  font-family: Inika;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts_container {
+  width: 450px;
+  height: 50px;
+  margin-top: 110px;
+  margin-right: 109px;
+  flex-shrink: 0;
+  background: #d6e7d2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #d6e7d2;
+}
+
+.contacts_a {
+  color: #717171;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  color: #717171;
+}
+
+.footer {
+  width: 1440px;
+  padding: 40px, 109px, 40px, 109px;
+  background-color: #ffffff;
+}
+
+.footer_content {
+  width: 820px;
+  padding-left: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_data {
+  display: flex;
+}
+
+.ppp {
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: flex-start;
+    padding-left: 109px;
+    margin-left: 125px;
+  }
+  .nav {
+    padding-left: 139px;
+  }
+  .welcome_section {
+    flex-direction: row-reverse;
+  }
+  .welcome {
+    margin-left: 125px;
+  }
+  .about_section {
+    display: block;
+    text-align: center;
+  }
+  .about_text {
+    margin-left: 290px;
+  }
+  .about {
+    margin-left: 125px;
+  }
+  .about_h2 {
+    margin-left: 70px;
+  }
+  .service {
+    margin-left: 125px;
+  }
+  .service_container {
+    width: 1220px;
+    text-align: center;
+  }
+  .service_text {
+    display: block;
+    margin-left: 160px;
+  }
+  .service_button {
+    padding-right: 240px;
+    padding-top: 40px;
+  }
+
+  .service_buttons {
+    flex-direction: column;
+    justify-content: center;
+    color: #e06733;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    flex-shrink: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #e06733;
+  }
+
+  .services {
+    text-align: center;
+  }
+  .service_item_container1 {
+    margin-top: 70px;
+    margin-left: 160px;
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .price_container {
+    margin-left: 125px;
+    justify-content: center;
+  }
+  .contacts {
+    margin-left: 125px;
+  }
+  .contacts_main_container {
+    flex-direction: row-reverse;
+  }
+
+  .footer_content {
+    margin-left: 125px;
+    display: block;
+    text-align: center;
+  }
+  .footer_data {
+    justify-content: center;
+  }
 }
